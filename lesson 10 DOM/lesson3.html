@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div>Div</div>
+    <p class="para" title="paragraph" data-src="" id="para">Paragraph</p>
+    
+    
+
+
+
+    <script>
+
+/*
+  DOM [Check Attributes]
+  - Element.attributes
+  - Element.hasAttribute
+  - Element.hasAttributes
+  - Element.removeAttribute
+*/
+
+var myP = document.getElementsByTagName('p')[0];
+
+if(myP.getAttribute('data-src') ===''){
+    myP.removeAttribute('data-src'); // THIS WILL WORK BECAUSE THE ATT DONT HAVE A VALUE 
+}else if(myP.hasAttribute('data-src')){
+    myP.setAttribute('data-src','new-Project'); 
+} else {
+    console.log('ATT is not founded !!');
+};
+
+
+
+
+myD = document.getElementsByTagName('div')[0];
+
+if(myD.hasAttributes()){
+    console.log('yes has ATT');
+} else {
+    console.log('no dont have ATT'); // NO
+}
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="my-div" > Div has <span>span</span></div>
+
+    <script>
+
+/*
+  DOM [Deal With Elements]
+  - before [Element || String]
+  - after [Element || String]
+  - append [Element || String]
+  - prepend [Element || String]
+  - remove
+*/
+
+
+
+
+let mydiv = document.getElementById('my-div');
+let myp = document.createElement('p');
+let mytext = document.createTextNode('this is P');
+
+myp.appendChild(mytext);
+
+mydiv.before('this is a befor text from JS');
+mydiv.after('this is after text from JS');
+
+mydiv.before(myp); // can see it in inspecter
+mydiv.after(myp); // can see it in the inspecter
+
+mydiv.append('   *inside div text in the end*');
+mydiv.prepend('*inside div text from the first*  ')
+
+//mydiv.remove(); // the dive removed complitly
+
+
+
+
+    </script>
+</body>
+</html>

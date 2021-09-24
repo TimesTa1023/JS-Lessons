@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+  Scope
+  - Lexical Scope
+
+  Search
+  - Execution Context
+  - Lexical Environment
+*/
+
+
+
+let a = 50;
+  function parents(){
+      
+        function child(){
+            console.log(`this is from child ${a}`);
+            let a = 10; // IF REMOVE THIS IT WILL READ IT FROM GLOBAL
+            function kids(){
+                let b = 100;
+                console.log(`this is from kid ${a}`);
+                console.log(`this is from kid ${b}`);
+            }
+            kids();
+
+        }
+        child();
+  }
+  parents();
+
+
+
+    </script>
+</body>
+</html>

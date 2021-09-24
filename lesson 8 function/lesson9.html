@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+var x = 11;
+let nn = 22;
+
+function showText(){
+    var a = 10;
+    let b = 20;
+    console.log(`Hello from local - Function ${a} ${b}`); // WORK BECAUSE ITS SIMPLY LOCAL VARIABLES
+    console.log(`Hello from local - Function ${x} ${nn}`); // WILL WORK FUNCTION READ OUT SIDE VARIABELS
+
+};
+
+console.log(`Hello from global ${a} ${b}`); // WILL NOT WORK BECAUSE ONLY GLOBAL FUNCTION READ
+
+/****************************************************************************************************/
+
+/*
+  Scope
+  - Block Scope [If, Switch, For]
+*/
+
+var x = 10;
+
+if (10 === 10) {
+  let x = 50;
+  console.log(`From If Block ${x}`);
+}
+
+console.log(`From Global ${x}`);
+
+
+
+
+    </script>
+</body>
+</html>

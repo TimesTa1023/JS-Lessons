@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/*
+  Reduce
+  - Longest Word
+  - Remove Characters + Use Reduce
+*/
+
+let theBiggest = ["Bla", "Propaganda", "Other", "AAA", "Battery", "Test", "Propaganda_Two"];
+
+
+let tb = theBiggest.reduce(function(acc, element){
+    return acc.length < element.length ? element : acc;
+});
+console.log(tb);
+
+let removeChars = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O"];
+
+let rem = removeChars.filter(function(element){
+    return element !== "@";
+}).reduce(function(acc, element){
+    return `${acc}${element}`;
+})
+
+console.log(rem);
+
+
+
+
+
+    </script>
+</body>
+</html>

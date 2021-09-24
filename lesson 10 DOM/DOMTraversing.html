@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-div">
+        <span class="one">One</span>
+        <!-- comment -->
+        <span class="two">two</span>
+        <!-- comment -->
+        <span class="three">Three</span>
+    </div>
+    <script>
+
+/*
+  DOM [Traversing]
+  - nextSibling
+  - previousSibling
+  - nextElementSibling
+  - previousElementSibling
+  - parentElement
+*/
+
+
+
+
+let span = document.querySelector('.two');
+
+//console.log(span.nextElementSibling.remove());// remove the next element
+//console.log(span.previousElementSibling); // show the befor element
+//console.log(span.previousSibling); // show the comment
+
+console.log(span.parentElement);
+
+span.onclick = function(){
+    span.parentElement.remove();
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

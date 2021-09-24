@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    /*
+  Control Flow
+  - if
+  - else if
+  - else
+
+  if (Condition) {
+    // Block Of Code
+  }
+
+*/
+
+let price = 100;
+let discount = false;
+let discountAmount = 30;
+let country = "KSA";
+
+
+if(discount === true) {
+    price = price -= discountAmount;
+} else if (country === "tunisia") {
+    price -= 40;
+
+} else if (country === "egypt") {
+    price -= 60;
+} else {
+    price -= 10; // this will work 
+}
+
+console.log(price)
+
+
+/*
+  Nested If
+*/
+
+
+</script>
+
+    <script src="main.js"></script>
+</body>
+</html>

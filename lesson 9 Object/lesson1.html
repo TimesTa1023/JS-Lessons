@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+  Object
+  - Intro and What Is Object
+  - Testing Window Object
+  - Accessing Object
+*/
+
+
+let user = {
+    // Properties
+    name: "Yssine",
+    age: 27,
+    // Methods
+    sayHello: function(){
+        return `Hello`;
+    }
+};
+
+console.log(user.name);
+console.log(user.age);
+console.log(user.sayHello());
+
+/*
+  Object
+  - Dig Deeper
+  - Dot Notation vs Bracket Notation
+  - Dynamic Property Name
+*/
+
+
+let myVar = "country"; //  <== this here 
+
+let userr = {
+    name: "Yassine",
+    "country" /* <== same here */: "Tunisia" 
+}
+
+console.log(userr.name); // return Yassine
+console.log(userr["country"]); // return Tunisia
+console.log(userr[myVar]); // return Tunisia
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

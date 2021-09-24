@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+/*
+  Loop For Advanced Example
+*/
+
+var friends = ["Yassine", "Kantola", "Rakcha", "Topos", "Zarozor", "Timesta"];
+var i = 0;
+
+
+for(;;){
+    console.log(friends[i]);
+    i++;
+    if(i === friends.length) break;
+};
+
+
+
+/*
+  Products Practice
+*/
+
+
+var items = ['T-shirts', 'Pants', 'Jackets', 'Shooses', 'Sos', 'Mick'],
+    colors = ['White', 'Black'],
+    itemsToShow = 3;
+///
+
+
+document.write(`<h1> Show only ${itemsToShow} Items </h1>`)
+
+for(var i = 0; i < itemsToShow; i++){
+    document.write('<div>');
+    document.write(`<h3> [${i + 1}] ${items[i]} </h3>`)
+    
+    for(var x = 0; x < colors.length; x++){
+        colors[x];
+        document.write(`<p> ${colors.join(" | ")} </p>`);
+    }
+    document.write('</div>');
+};
+
+
+
+
+
+
+
+
+
+
+
+</script>
+    <script src="main.js"></script>
+</body>
+</html>

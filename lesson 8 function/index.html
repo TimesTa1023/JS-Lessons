@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*************************************************************************************************************/
+/*************************************************************************************************************/
+/*
+  Function
+  - What Is Function ?
+  - User-Defined vs Built In
+  - Syntax + Basic Usage
+  - Example From Real Life
+  - Parameter + Argument
+  - Practical Example
+*/
+
+
+function sayHello(user, age){
+    if(age < 18){
+        console.log(`Sorry ${user} your Under 18 Leave !!`);
+    } else {
+        console.log(`Hello ${user} Your are ${age} Welcom`);
+    }
+}
+
+sayHello("Yassine", 27);
+sayHello("Ridha", 50);
+sayHello('Radhia', 55);
+sayHello('hamza', 16);
+
+/*
+  Function Advanced Examples
+*/
+
+function generateYears(start, end, exclod){
+    for(let i = start; i <= end; i++){
+        if(i === exclod){
+            continue;
+        }
+        console.log(i);
+    }
+}
+
+generateYears(2000, 2021, 2020);
+
+/*************************************************************************************************************/
+/*************************************************************************************************************/
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

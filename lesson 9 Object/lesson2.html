@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+  Object
+  - Nested Object And Trainings
+*/
+
+
+let user = {
+    name: "Yassine",
+    age: 27,
+    skills: ["HTML", "CSS", "JavaScript"],
+    availebel: false,
+    adresses: {
+        tunisia: {
+            ad1: "Megrine",
+            ad2: "Sfax"
+        },
+        qatar: "Al-Wakrah"
+    },
+    checkAv: function(){
+        if(user.availebel === true){
+            return 'Working';
+        } else {
+            return 'Not Working ';
+        }
+    }
+}
+
+console.log(user.name); // YASSINE
+console.log(user.age); // 27
+console.log(user.skills.join(', ')); // HTML CSS JAVASCRIPT
+console.log(user.adresses.tunisia.ad1); // MEGRINE
+console.log(user.adresses.tunisia.ad2); // SAFX
+console.log(user.adresses.qatar); // AL-WAKRAH
+console.log(user.checkAv()); // NOT WORKING
+
+    </script>
+</body>
+</html>

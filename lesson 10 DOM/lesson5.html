@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+function divloop(){
+
+
+    for(var i = 0; i < 10; ){ // ALL THIS MAKE A LOOP BUT ITS FAULT NEED TO FIX IT
+
+
+                            let myElement = document.createElement('div');
+                            let myp = document.createElement('p');
+                            let myh3 = document.createElement('h3');
+                            let divComment = document.createComment('this is a div');
+                            let myheadtext = document.createTextNode('Product Title');
+                            let myptxt = document.createTextNode('Product Discrption');
+
+                            myh3.appendChild(myheadtext);
+                            myElement.appendChild(myh3);
+                            myElement.appendChild(divComment);
+                            myElement.className = "title";
+                            myp.appendChild(myptxt);
+
+                            document.body.appendChild(myElement);
+                            document.body.appendChild(myp);
+
+
+
+    
+    i++
+}
+
+
+
+
+
+}
+
+divloop();
+console.log(divloop());
+
+    </script>
+</body>
+</html>

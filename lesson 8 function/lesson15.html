@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+
+Filter 
+- Filter Longest word by Number
+
+*/
+
+
+// Filter Words more than 4 characters 
+let sentence = "I Love Foood code too playing Much";
+
+
+let sen = sentence.split(' ').filter(function(element){
+    return element.length <= 4;
+}).join(' ');
+
+console.log(sen);
+
+
+// Ignore Numbers
+let ignoreNumbers = "0123Elz123er4o";
+
+let ign = ignoreNumbers.split('').filter(function(element){
+    return isNaN(parseInt(element)) ? element : '';
+    console.log(ign);
+}).join('');
+console.log(ign);
+
+let mix = "A13BS2ZX";
+
+let mixContant = mix.split('').filter(function(element){
+    return !isNaN(parseInt(element));
+}).map(function(element){
+    return element * element;
+}).join('');
+console.log(mixContant);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

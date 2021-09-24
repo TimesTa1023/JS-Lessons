@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    /*
+Number 
+
+   - Double Precision
+   - Syntactic Sugar "_"
+   - e
+   - **
+   - With Decimal
+   - Number + BigInt
+   - Number Min Value
+   - Number Max Value
+
+*/
+
+
+console.log(1_000_000); // 1000000
+console.log(1e6); // 1000000
+console.log(10 ** 6); // 1000000  => 10 * 10 *10 *10 * 10 *10 *10
+console.log(1000000.0); // 1000000
+console.log(Number.MIN_SAFE_INTEGER);
+console.log(Number.MAX_VALUE);
+console.log(Number.MAX_VALUE + 236654); // not working
+
+// ******************************************************************************************************************************************
+
+
+/*
+
+Number Methods
+
+    - Tow Dots To Call A Methods
+    - ToString()
+    - toFixed()
+    - parseInt()
+    - parseFloat()
+    -isInteger() [ES6]
+    - isNan ()  [ES6]
+
+
+*/
+
+
+console.log((100).toString());
+console.log(100. .toString());
+
+console.log(100.554555555555.toFixed(2));
+
+console.log(Number("100"));
+console.log(Number("100 yassine")); // Nan
+console.log(+"100 yassine"); // Nan
+console.log(parseInt("100 yassine")); // 100
+console.log(parseInt("yassine 100")); // Nan
+
+
+console.log(parseFloat("100.5")); //100.5
+console.log(parseInt("100.5")); // 100
+
+
+console.log(Number.isInteger("100")); // false  string
+console.log(Number.isInteger(100.500)); // false .500
+console.log(Number.isInteger(100)); // true
+
+console.log(Number.isNaN("yassine" / 20)); // true
+
+
+
+
+
+</script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/*
+  Map
+  - Swap Cases
+  - Inverted Numbers
+  - Ignore Boolean Value
+*/
+
+let swappingCases = "elZERo"; // HETHI RADITHA LKOLHA LOWERCASE
+let invertedNumbers = [1, -10, -20, 15, 100, -30]; 
+let ignoreNumbers = "Elz123er4o";
+
+// let sw  = swappingCases.split('').map(function(a){
+//               return a === a.toUpperCase() ? a.toLowerCase() : a.toLowerCase();
+// }).join('');
+
+var sw = swappingCases.split('').map((a) => (a === a.toUpperCase() ? a.toLowerCase() : a.toLowerCase())).join('');
+
+console.log(sw);
+
+
+let inv = invertedNumbers.map(function(ele){
+    return  -ele
+});
+
+console.log(inv);
+
+let ign = ignoreNumbers.split('').map(function(element){
+    return isNaN(parseInt(element)) ? element : '';
+}).join('');
+
+console.log(ign);
+
+
+
+    </script>
+</body>
+</html>

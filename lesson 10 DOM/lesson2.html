@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="js">JavaScript <span>Div</span></div>
+<img src="" alt="">
+<a href="#" class="link">Google</a>
+
+
+
+    <script>
+
+/*
+  DOM [Get / Set Elements Content And Attributes]
+  - innerHTML
+  - textContent
+  - Change Attributes Directly
+  - Change Attributes With Methods
+  --- getAttribute
+  --- setAttribute
+
+  Search
+  - innerText
+*/
+
+let mydiv = document.querySelector('.js');
+
+mydiv.innerHTML = "this is used with <span>Yassine</span> VDCOD"; // THIS WILL BE CONVERTED AND SHOW NORMAL IN HTML PAGE
+mydiv.textContent = "this is used with <span>Yassine</span> VDCOD"; // THIS SHOW LIKE IT IN IN THE HTML PAGE
+
+document.images[0].src = "https://twitter.com";
+document.images[0].alt = "Alternate";
+document.images[0].id = "pic";
+document.images[0].className = "img"
+document.images[0].title = "picture"
+
+
+let mylink = document.querySelector('.link');
+
+mylink.setAttribute("href", "facebook.com");
+mylink.setAttribute("title", "facebook");
+mylink.innerHTML = "Facebook";
+
+
+
+
+
+
+    </script>
+</body>
+</html>

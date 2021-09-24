@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+  Function this Keyword
+  - this Introduction
+  - this Inside Object Method
+  --- When a function is called as a method of an object,
+  --- its this is set to the object the method is called on.
+  - Global Object
+  - Test Variables With Window And This
+  - Global Context
+  - Function Context
+
+  Search
+  - Strict Mode
+*/
+
+console.log(this);
+console.log(this === window);
+
+let user = {
+    name: "Yassine",
+    age: 27,
+    ageInDays: function(){
+        return this.age * 365;
+    }
+}
+
+console.log(user.ageInDays());
+
+function sayHello(){
+    return this;
+}
+console.log(sayHello() === window);
+
+
+
+
+    </script>
+</body>
+</html>

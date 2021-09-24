@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    /*
+  String Methods
+  - substring(Start [Mand], End [Opt] Not Including End)
+  --- Start > End Will Swap
+  --- Start < 0 It Start From 0
+  --- Use Length To Get Last Character
+  - substr(Start [Mand], Characters To Extract)
+  --- Start >= Length = ""
+  --- Negative Start From End
+  - includes(Value [Mand], Start [Opt] Default 0) [ES6]
+  - startsWith(Value [Mand], Start [Opt] Default 0) [ES6]
+  - endsWith(Value [Mand], Length [Opt] Default Full Length) [ES6]
+*/
+
+let a = "elzero web school";
+
+console.log(a.substring(2, 6));
+console.log(a.substring(6, 2));
+console.log(a.substring(-10 , 6)) // from 0 to 6 = elzero
+console.log(a.length - 1); // word has 16 index has 17 lenght - 1 gives last alphabet wich is L
+console.log(a.length - 5, a.length - 3); // ch
+
+console.log(a.substr(0, 6));
+console.log(a.substr(17));
+console.log(a.substr(-3));
+console.log(a.substr(-5, 2));
+
+console.log(a.includes("web")); // true
+console.log(a.includes("web", 8)); // false
+
+
+console.log(a.startsWith("e")); // true
+console.log(a.startsWith("z", 2)); // true
+console.log(a.startsWith("z", 3)); // false
+
+console.log(a.endsWith("o")); // false because the word end with L
+console.log(a.endsWith("o", 6)); // true
+
+
+
+
+
+</script>
+    <script src="main.js"></script>
+</body>
+</html>

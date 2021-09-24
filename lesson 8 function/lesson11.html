@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+Function Arrow Challenges
+*/
+
+// [1] One Statement In Function
+// [2] Convert To Arrow Function
+// [3] Print The Output [Arguments May Change]
+
+        let names = (...users) => {return (`[${ users.join('], [').toString()}]`)};  
+        console.log(names("Osama", "Mohamed", "Ali", "Ibrahim"));
+//String [Osama], [Mohamed], [Ali], [Ibrahim] => Done !
+  
+  /* ================================= */
+  
+  // [1] Replace ??? In Return Statement To Get The Output
+  // [2] Create The Same Function With Regular Syntax
+  // [3] Use Array Inside The Arguments To Get The Output
+  
+
+let myNumbers = [20, 50, 10, 60];
+
+let calc = (one, two, ...nums) => one + two + +nums;
+
+console.log(calc(10, myNumbers[1], myNumbers[0])); // 80
+
+
+
+
+
+    </script>
+</body>
+</html>

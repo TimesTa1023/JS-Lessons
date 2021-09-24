@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+  Object
+  - Create Object With assign Method
+*/
+
+let obj1 = {
+    prop1: 1,
+    meth1: function(){
+        return this.prop1;
+    }
+}
+
+let obj2 = {
+    prop2: 2,
+    meth2: function(){
+        return this.prop2;
+    }
+
+}
+
+let obj3 = {
+    prop1: 3,
+    prop3: 4
+}
+
+let finalObj = Object.assign(obj1, obj2,obj3);
+
+finalObj.prop1 = 10;
+finalObj.prop4 = 100;
+
+console.log(finalObj.prop4);
+
+
+
+    </script>
+</body>
+</html>

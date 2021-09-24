@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .div{
+
+            font-size: 30px;
+            line-height: 2;
+
+        };
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="my-div" class="one two test show">Div with many Classes</div>
+
+
+
+    <script>
+
+/*
+    DOM [CSS]
+    --- Style
+    --- CSSText
+    --- removeproperty(propertyName) [Inline, Stylesheet]
+    --- setProperty(propertyName, value, priority)
+*/
+
+
+let element = document.getElementById('my-div');
+
+
+
+element.style.color = "red";
+element.style.fontWeight = "bold";
+
+element.style.cssText = "font-weight: bold; color: green; opacity: 0.9;";
+
+element.style.removeProperty('color');
+element.style.setProperty('font-size', '40px', 'importent');
+
+document.styleSheets[0].rules[0].removeProperty('line-haight'); // work with css file //
+document.styleSheets[0].rules[0].setProperty('background-color', "red", "importent"); // work with css file //
+
+
+
+
+
+
+    </script>
+</body>
+</html>

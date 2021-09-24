@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<p id="demo"></p>
+
+
+<script>
+/*
+  Loop
+  - For
+  for ([1] [2] [3]) {
+    // Block Of Code
+  }
+*/
+
+var test = [1, 2, 3];
+
+for(var i = 0; 0 < 10; i++){
+console.log(test[i]);
+};
+
+
+/*
+  Loop
+  - Loop On Sequences
+*/
+
+
+var f = ["yassine", 1, 2, 1e4, "kantola", "ahmed", 30, 3e1, "Topos"];
+var o = [], 
+    d = document.getElementById('demo');
+
+for(let i = 0; i < f.length; i++){
+  if(typeof f[i] === 'string'){
+    o.push(f[i]);
+  }
+ };
+
+
+
+d.innerHTML = o.join(" | ");
+
+
+
+/*
+
+Loop
+- Nested Loops
+
+*/
+
+
+var items = ['T-shirts', 'Pants', 'Jackets', 'Shooses'],
+    colors = ['White', 'Green', 'Black'];
+    madeIn = [2021];
+
+
+for(i = 0; i < items.length; i++){
+  console.log('*'.repeat(15));
+  console.log(`*** ${items[i]} ***`);
+  console.log('*'.repeat(15));
+  console.log('Colors: ');
+  for(a = 0; a < colors.length; a++){
+    console.log(colors[a]);
+  }
+  console.log('Made in:');
+  for(k = 0; k < madeIn.length; k++){
+    console.log(madeIn[k].toString());
+  }
+};
+
+
+
+
+
+</script>
+    <script src="main.js"></script>
+</body>
+</html>

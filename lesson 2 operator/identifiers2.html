@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    /* 
+
+Var
+
+    - Redeclare (Yes)
+    - Access Befor Declare (Undifined)
+    - Variable Scope Drama [Added to Window] ()
+    - Block or Function Scope
+
+Let
+
+    - Redeclare (No => Error)
+    - Access Befor Declare (Error)
+    - Variable Scope Drama  ()
+    - Block or Function Scope
+
+Const
+
+    - Redeclare (No => Error)
+    - Access Befor Declare (Error)
+    - Variable Scope Drama  ()
+    - Block or Function Scope
+
+*/
+
+
+var a = 1;
+var a = 2;
+
+console.log(a);
+
+let a = 1; //error
+let a = 2; //error
+
+const a = 1; //error
+const a = 2; //error
+
+console.log(a);
+
+
+
+
+</script>
+
+    <script src="main.js"></script>
+</body>
+</html>

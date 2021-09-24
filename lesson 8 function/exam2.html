@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    /*
+  Higher Order Functions Challenges
+
+  You Can Use
+  - ,
+  - _
+  - Space
+  - True => 1 => One Time Only In The Code
+
+  You Cannot Use
+  - Numbers
+  - Letters
+
+  - You Must Use [Filter + Map + Reduce + Your Knowledge]
+  - Order Is Not Important
+  - All In One Chain
+
+*/
+
+let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
+
+//let solution = myString.split("").filter(ele => !isNaN(ele) ? "" : ele).filter(ele => ele != "," ? ele : "").reduce((acc, curnt) => acc + curnt).split("_").join(" ").slice(true, -true)
+let solution = myString.split('').filter((ele) => !isNaN(ele) ? "" : ele).filter((ele) => ele !== "," ? ele : "").reduce((element, index) => element + index).split("_").join(' ').slice(true, -true);
+console.log(solution); // Elzero Web School
+
+// let solution = myString
+//  .split("")
+//  .filter((char) => {
+//    return isNaN(char) && !char.includes(",");
+//  })
+//  .slice(1, 18)
+//  .map((char) => {
+//    return char === "_" ? " " : char;
+//  })
+//  .reduce((acc, cur) => {
+//    return `${acc}${cur}`;
+//  });
+
+//console.log(solution);
+
+
+
+
+
+
+//let solution = myString.split(',').map(function(ele){
+//    let element = ele[+!true] ;
+//    return ele === ele.toUpperCase() ? " "+ element : element; 
+//}).reduce(function(acc , curr){
+ //   return acc + curr ;
+//}).split(' ').filter(function(ele){
+//    return isNaN(ele) && ele !== "_" && !ele.startsWith(+false)
+//}).join(' ');
+//console.log(solution)
+</script>
+
+
+</body>
+</html>

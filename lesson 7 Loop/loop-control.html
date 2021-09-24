@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+/*
+  Loop Control
+  - Break
+  - Continue
+  - Label
+*/
+
+
+var items = ['T-shirts', 'Pants', 'Jackets', 'Shooses'],
+    colors = ['White', 'Green', 'Black'];
+
+
+mainLoop: for(i = 0; i < items.length; i++){
+    console.log(items[i]);
+sencondLoop: for (j = 0; j < colors.length; j++){
+    console.log(`- ${colors[j]}`);
+    if(colors[j] === 'Black'){
+        break mainLoop; // stop all other items and prist only one items with all color NEED TO FIX IT 
+    }
+}
+};
+</script>
+    <script src="main.js"></script>
+</body>
+</html>

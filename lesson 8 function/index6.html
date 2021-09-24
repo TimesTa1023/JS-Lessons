@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="show">Show</button>
+    <button id="info">submit</button>
+
+
+
+
+    <script>
+/*
+  Function
+  - Anonymous Function
+  - Calling Named Function vs Anonymous Function
+  - Argument To Other Function
+  - Task Without Name
+  - SetTimeout
+*/
+
+
+// ***
+document.getElementById('show').onclick = function(){
+    console.log('Hi from Console Log !');
+};
+
+// ***
+let calculate = function(num1,num2){
+    return num1 + num2;
+}
+
+console.log(calculate(10,20));
+
+// ***
+function sayHello(){
+    console.log('Hello Yassine');
+}
+sayHello();
+
+
+// ***
+setTimeout(function(){
+    console.log('show this message after 3 seconds !');
+}, 3000);
+
+
+
+    </script>
+</body>
+</html>

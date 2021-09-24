@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<script>
+/*
+  Arrays Methods [Search]
+  - indexOf(Search Element, From Index [Opt])
+  - lastIndexOf(Search Element, From Index [Opt])
+  - includes(valueToFind, fromIndex [Opt]) [ES7]
+*/
+
+let friends = ["kantola", "TimesTa", "Topos", "EEE", "Rakcha"];
+
+console.log(friends);
+
+console.log(friends.indexOf("kantola")); // 0
+console.log(friends.lastIndexOf("Topos")); // 2
+console.log(friends.lastIndexOf("Topos", -3)); // 2
+
+console.log(friends.includes("topos")); // false
+
+if (friends.indexOf("kantola") === -1){
+  console.log("Not found"); // false
+} else {
+  console.log("yes he is in the  array");
+};
+
+
+if (friends.indexOf("sarrah") === -1){
+  console.log("not found"); // true
+};
+
+
+
+/*
+
+Arrays Methods [Sort]
+  - Sort(Function [Opt])
+  - Reverse
+
+*/
+
+
+let myFriends = [10, "Sayed", "Mohamed", "90", 1e3, 1e2, "10", -20, -10, 9e3];
+console.log(myFriends);
+
+console.log(myFriends.sort()); // -10 -20 1 2 3 4 5 6 7 8 9 a b c d ...
+console.log(myFriends.reverse()); // 9 8 7 6 5 4 3 2 1 w z 
+
+console.log(myFriends.sort().reverse()); 
+
+
+</script> 
+        <script src="main.js" async defer></script>
+    </body>
+</html>

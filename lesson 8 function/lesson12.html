@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/*
+
+Higher Orde Funtion 
+
+---->  is a fucntion that accepts function as parametrs and/or returns a function 
+
+- Map
+
+---- Method creates a new array 
+---- Populated with the Results of Calling a Provided Function on every Element 
+---- in the Calling array
+
+Syntax Map(CallBackFuction(Elemen, Index, Array)){}, thisArg;
+ - Element => the Current Element Being Proceesed in the array 
+ - Index => the index of the current element Bring Processesd in the array.
+ - Array => the Current Array
+
+
+Notes
+ - Map Return  new Array
+
+Examples
+ - Annonymos Function
+ - Named Function
+
+*/
+
+let myNums = [1, 2, 3,4,5,6];
+
+let newArray = [];
+
+for(let i =0; i < myNums.length; i++){
+    newArray.push(myNums[i] + myNums[i]);
+}
+console.log(newArray);
+
+// same idea with Map
+
+let addSelf = myNums.map(function (element,index,array){
+    console.log(`Current Element => ${element}`);
+    console.log(`Current index is ${index}`);
+    console.log(`Current array is ${array}`);
+    return element + element;
+});
+
+// same
+
+let addSelf = myNums.map((a) => a + a);
+console.log(addSelf);
+
+
+function addittion(element){
+    return element + element;
+}
+let add = myNums.map(addittion);
+console.log(add);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

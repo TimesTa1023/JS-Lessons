@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<script>
+
+/*
+  Function
+  - Function Inside Function
+  - Return Function
+*/
+
+
+// Exomple 1
+
+
+function saymessage(name, lastname){
+      let message = 'Hello';
+  // Nested Function
+  function concatMsg(){
+    message = `${message} ${name} ${lastname}`;
+  }
+  concatMsg();
+  return message;
+}
+
+console.log(saymessage('Yassine', 'Mimouni'));
+
+
+
+//Exomple 2
+function saymessage(name, lastname){
+  let message = 'Hello';
+
+  // Nested Function
+  function concatMsg(){
+    return `${message} ${name} ${lastname}`;
+  }
+  return concatMsg();
+}
+
+console.log(saymessage('Yassine', 'Mimouni'));
+
+
+
+//Exomple 3
+function saymessage(name, lastname){
+  let message = 'Hello';
+
+  // Nested Function
+  function concatMsg(){
+       function getFullName(){
+          return `${name} ${lastname}`;
+       }
+       return `${message} ${getFullName()}`;
+  }
+  return concatMsg();
+}
+
+console.log(saymessage('Yassine', 'Mimouni'));
+
+
+
+
+</script>
+</body>
+</html>

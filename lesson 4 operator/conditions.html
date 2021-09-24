@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    let theName = "Mona", theGender = "Female", theAge = 30;
+
+if (theGender === "Male") {
+    console.log("Mr");
+} else {
+    console.log("Mrs");
+};
+
+
+// Condition ? if true : if false
+
+
+theGender === "Male" ? console.log("Mr") : console.log("Mrs");
+
+let result = theGender === "Male" ? "Mr" : "Mrs";
+
+
+console.log(`Hello ${theGender === "Male" ? "Mr " : "Mrs "}${theName}`);
+
+theAge < 20 ? console.log(20) : theAge > 20 && theAge < 60 ? console.log("20 to 60") : theAge > 60 ? console.log("ok") : console.log('Unkown');
+
+//********************************************************************************************************* */
+
+/*
+  Logical Or ||
+  -- Null + Undefined + Any Falsy Value
+  Nullish Coalescing Operator ??
+  -- Null + Undefined
+*/
+
+console.log(Boolean(0)); // false
+console.log(Boolean("")); // false
+console.log(Boolean(null)); // false
+
+console.log(Boolean(100)); // true
+console.log(Boolean(-100)); // true
+
+// another exomple of undifined var price;
+
+let price = 0; // the 0 and the null and "" is undifined then the price  will change to 200
+
+console.log(`this price is ${price || 200}`);
+
+</script>
+    <script src="main.js"></script>
+</body>
+</html>

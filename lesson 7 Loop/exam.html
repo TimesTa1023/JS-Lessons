@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<label for="">Join a Member: <input type="text" class="txt" id="txt"><button id="submit" >Submit</button></label>
+
+
+
+
+<script>
+    let myAdmins = ["Yamina","Ahmed", "Osama", "Sayed",  "Stop", "Samera"];
+    let myEmployees = ["Amgad","Samah","Ameer","Omar","Othman","Amany","Samia","Anwar","Yassine", "Yesmine"];
+    
+    if(myAdmins.indexOf('Stop') !== -1){
+        myAdmins.length = myAdmins.indexOf('Stop');
+    };
+    
+    
+    document.write(`We Have ${myAdmins.length} Admins`);
+    
+    for(var x = 0; x < myAdmins.length; x++){
+        document.write('<hr>');
+        document.write(`<div> The Admin For Team ${x +1} Is ${myAdmins[x]} </div>`);
+        document.write(`<h4>Team Members</h4>`);
+        for(var c = 0, b = 1; c < myEmployees.length; c++){
+            if(myAdmins[x][0].toLowerCase() === myEmployees[c][0].toLowerCase()){
+                document.write(`<p> -${b++} ${myEmployees[c]} </p>`)
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+/*******************************************************************************************************************/
+
+    let letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+let Users = ["Amgad","Samah","Ameer","Omar","Othman","Amany","Samia","Anwar","Yassine", "Yesmine", "Sabrine", "zubair"];
+
+
+
+
+
+
+    //********************
+    // Yesmine Hethi ayka chof el Console o jareb ekteb o enzel submit ta temchi amlelha el fonction
+    var btn = document.getElementById('submit'),
+    inpt = document.getElementById('txt');
+    btn.addEventListener('click', () => {
+    Users.push(inpt.value); 
+    console.log(Users); // console
+    }); 
+
+    //****************************
+
+
+
+for(var x = 0; x < letters.length; x++){
+
+    document.write('<hr>');
+    document.write(`<div> Members With Letter  <span style="color: red; font: bold;">${letters[x][0]}</span> </div>`);
+    document.write(`<h4> Members</h4>`);
+    for(var c = 0; c < Users.length; c++){
+        if(letters[x][0].toLowerCase() === Users[c][0].toLowerCase()){
+            document.write(`<p> ${Users[c]} </p>`)
+        }
+    }
+};
+
+
+
+
+
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>

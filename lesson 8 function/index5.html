@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+  Function Advanced Practice
+  - Parameters
+  - Default
+  - Rest
+  - Loop
+  - Condition
+*/
+
+
+function usersInfo(userName = "Uknown",age = "Uknown",price = 0, show = "yes",...skills){
+    document.write('<div>');
+    document.write(`<p> Username: ${userName} </p>`);
+    document.write(`<p> Age: ${age} </p>`);
+    document.write(`<p> Hour Rate: $${price} </p>`);
+
+    if(show == "yes"){
+        if(skills.length > 0){
+            document.write(`Skills: ${skills.join(' | ')}`);
+        }
+    } else {
+        document.write('skills Hidden');
+    }
+    
+    
+    document.write('</div>');
+}
+
+usersInfo("Yassine", 27, 50, "yes", "HTML","CSS","JS",'Driving');
+
+
+
+    </script>
+</body>
+</html>

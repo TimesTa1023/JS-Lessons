@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<span class="my-span">my Span</span>
+<p>Hello Paragraph 1</p>
+<p>Hello Paragraph 2</p>
+<div id="my-div">Hello Div</div>
+<form action="" method="get">
+    <input type="text" name="one" value="Hello">
+</form>
+<form action="">
+    <input type="text" name="two" value="Hello">
+</form>
+<a href="https://www.google.com/">google</a>
+<a href="https://elzero.org/javascript-2021-what-is-dom-and-select-elements/">School</a>
+
+    <script>
+/*
+  DOM
+  - What Is DOM
+  - DOM Selectors
+  --- Find Element By ID
+  --- Find Element By Tag Name
+  --- Find Element By Class Name
+  --- Find Element By CSS Selectors
+  --- Find Element By Collection
+  ------ title
+  ------ body
+  ------ images
+  ------ forms
+  ------ links
+*/
+
+let myIdElement = document.getElementById('my-div');
+let myTagElement = document.getElementsByTagName('p');
+let myClassElement = document.getElementsByClassName('my-span');
+let myQueryElement = document.querySelector('.my-span');
+let myQueryAllElement = document.querySelectorAll('.my-span ');
+
+
+console.log(myIdElement);
+console.log(myTagElement[1]);
+console.log(myClassElement);
+console.log(myQueryElement);
+console.log(myQueryAllElement);
+console.log(document.forms[1].two.value);
+
+
+
+let link = document.links[0].href = "https://www.youtube.com/watch?v=5AsLKj_tNFQ"
+
+console.log(document.links[0].href.value = "facebook.com")
+
+
+
+
+    </script>
+</body>
+</html>
